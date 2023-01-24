@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Helvetica, sans-serif; 
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+header {
+  background-color: #131313;
+  
+}
+
+body {
+  background-color: #131313;
+}
+
+img {
+  width: 16px;
+  filter:brightness(300%);
+  filter:invert();
+}
+
+header > section.socialmedia {
+  height: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > section.socialmedia > ul {
+  display: flex;
+  align-items: center;
+  width: 104px;
+  justify-content: space-around;
+}
+
+header > nav.menu {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+}
+
+header > nav.menu > div{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 50px;
+  align-items: center;
+}
+
+
+a.logo {
+  width: 20%;
+  height: 500px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+header > nav.menu > div > ul {
+  display: flex;
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  align-items: center;
+
+}
+
+h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu img {
+  height: 28px;
+  width: 28px;
+}
+
+.listauno {
+  width: 80%;
+  justify-content: flex-end;
+  height: 35.8px;
+
+}
+
+.listados {
+  width: 80%;
+  justify-content: flex-start;
+  height: 35.8px;
+
+}
+
+.listatres {
+  width: 20%;
+  justify-content: flex-end;
+  height: 35.8px;
+  
+}
+
+.lupa {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.listauno li {
+  padding: 7.5px 15px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.listados li {
+  padding: 7.5px 15px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.hero img {
+  width: 100vw;
+  filter: brightness(100%);
+  animation: zoomBanner 5s;
+}
+
+@keyframes zoomBanner {
+  0% {
+    transform: scale(1.5);
+    filter: blur(14px) brightness(0%) saturate(0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.login img {
+  filter:none;
+  border: 1px solid  #ffffff;
+  
+  
+}
+
+.main {
+  display: flex;
+  filter: none;
+
+}
+
+.camiseta img {
+  width: 322px;
+  height: 322px;
+  filter: none;
+  margin: 0.5rem;
+  
+
+}
+
+.titulogaleria {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 25px
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  
+
+}
+
+.boton {
+  
+  color:#ffffff;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 11px 20px;
+  letter-spacing: 2.6px;
+  align-items: center;
+  background-color: #111111;
+  
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  
+}
+.login {
+  margin-right: 1.5rem;
+}
+
+.primera {
+  justify-content: center;
+}
+
+.search {
+  
+  text-align:center;
+  padding-top: 0.5rem;
+  font-size: 13.6px;
+  margin-left: 15rem;
+  
+
+}
+
+div.formulario {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  width: 50%;
+  
+}
+
+input {
+  
+  margin-bottom: 3rem;
+  font-size: 12.6px;
+  background-color: #131313;
+  border-bottom: 1px solid #ffffff;
+}
+
+.final {
+  
+  grid-column: 1 / 3;
+  text-align: center;
+  font-size: 12px;
+}
+
+.frase1 {
+  margin-bottom: 1.5rem;
+  letter-spacing: 2.6px;
+  font-size: 13.6px;
+  text-align: start;
+  
+}
+.frase2 {
+  
+  margin-bottom: 1rem;
+  font-size: 13.6px;
+  
+}
+
+input::placeholder {
+  color: #ffffff;
+  letter-spacing: 1px;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  
+}
+
+
+
+.camiseta > h3, p{
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+
+}
+
+.camiseta > h3 {
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  
+}
+
+.camiseta > p {
+  margin-top: 0.7rem;
+  font-size: 13px;
+  
+  
+}
